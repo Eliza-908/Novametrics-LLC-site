@@ -1,0 +1,119 @@
+<html>
+<head>
+	<title> Novametrics LLC </title>
+	<!--Using JQuery UI-->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+	  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	  
+	  <!--Using jQuery Jssor Slider scripts, can discuss-->
+	  <script src="http://code.jquery.com/jssor.slider.mini.js"></script>
+	
+	<!--A lot of styles you can make here if you don't want a separate CSS sheet-->
+	<style>
+		.ui-menu { width: 150px; }
+	</style>
+	<script>
+	  $(function() {
+	    $( "#menu" ).menu();
+	  });
+	  jQuery(document).ready(function ($) {
+	          var options = { $AutoPlay: true };
+	          var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+	      });
+	  </script>
+</head>
+
+<!--Section has the Logo that links to the homepage and the login button. Can discuss cool hover features and such.-->
+<body>
+	<div id="topMost">
+	<a href="Home.html"><img src='logo.png' alt='not found' width=20 height=10></a>
+	<div id ='loginButton'>
+	<a href="login.html">Log In </a>
+	</div>
+</div>
+
+<!--Navigation bar to direct the user around the website. Drop down menus, should be in a row but are currently in a column.-->
+<div id="navBar">
+	<ul id="menu">
+		<li>Who we are</li>
+		<ul>
+			<li>About us</li>
+			<li>History</li>
+			<li>Vision</li>
+			<li>Bios</li>
+		</ul>
+		<li>Our Approach</li>
+		<ul>
+			<li>Unique Databases</li>
+			<li>Innovative Methodologies</li>
+			<li>Data-to-Decision</li>
+		</ul>
+		<li>Projects</li>
+		<ul>
+			<li>Impact Investing</li>
+			<li>Emerging Threats</li>
+			<li>Aid & Development</li>
+			<li>Market Analysis</li>
+		</ul>
+	</ul>
+</div>
+
+<!--Images that indicate major accomplishments and draw the viewer in. One slideshow that runs in a loop but can be navigated by the user. Unsure whether they link to anything.-->
+<div id="slideShow">
+	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px;">
+	    <!-- Slides Container -->
+	    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+	        <div><img u="image" src="image1.jpg" /></div>
+	        <div><img u="image" src="image2.jpg" /></div>
+	    </div>
+	</div>
+</div>
+
+<!--Thumbnail images that further illuminate what we are doing. Unsure if list is the appropriate way to format this section. There are 4 images, each with a caption, that are in a row (currently in a column) -->
+<div id="thumbNailBar">
+	<ul>
+		<li><img src="temp.png">Identify Prime Opportuniteis</li>
+		<li><img src="temp.png">Optimize Resource Allocation</li>
+		<li><img src="temp.png">Promote Sustainable Development</li>
+		<li><img src="temp.png">Maximize Profit & Shared Value</li>
+</div>
+
+<!--Direct links to the cool data analysis images we can create, without the full context. Right now it is more or less another menu, ideally would have little boxes come out to the right of the list.-->
+<div id="dataDemos">
+	<h2> Our Data Demos <h2>
+	<ul>
+		<li>PRIME OPPORTUNITIES</li>
+		<li>EMERGING THREATS</li>
+		<li>WEAK-SIGNAL ANALYSIS</li>
+		<li>ECONOMIC FACTOR ANALYSIS</li>
+		<li>SOCIAL MEDIA WATCHBOARD</li>
+	</ul>
+</div>
+
+<!--Site map has the same links as the navBar. Should be in 3 columns equally spaced columns, currently in one. -->
+<div id="siteMap">
+	<h4>Who We Are</h4>
+	<ul> 
+		<li><a href="Home.html">About Us</a></li>
+		<li><a href="Home.html">History</a></li>
+		<li><a href="Home.html">Vision</a></li>
+		<li><a href="Home.html">Bios</a></li>
+	</ul>
+	<h4>Our Approach</h4>
+	<ul> 
+		<li><a href="Home.html">Unique Databases</a></li>
+		<li><a href="Home.html">Innovative Methodologies</a></li>
+		<li><a href="Home.html">Data-to-Decision</a></li>
+	</ul>
+	<h4>Projects</h4>
+	<ul> 
+		<li><a href="Home.html">Impact Investing</a></li>
+		<li><a href="Home.html">Emerging Threats</a></li>
+		<li><a href="Home.html">Aid & Development</a></li>
+		<li><a href="Home.html">Market Analysis</a></li>
+	</ul>
+</div>
+</body>
+</html>
+
